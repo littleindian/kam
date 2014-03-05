@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @current_user.name %> 
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @current_user.email %> 
+</p>
+
+<p>
+  <strong>Website:</strong>
+  <%= @current_user.website %> 
+</p>
+
+<%= link_to "Awards", awards_path, id: "awards" %>
+<%= link_to "Sign out", signout_path, id: "sign_out" %>
+<%= link_to 'Back', users_path %> 
