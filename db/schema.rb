@@ -11,12 +11,32 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131216004101) do
+ActiveRecord::Schema.define(version: 20140317150255) do
 
   create_table "awards", force: true do |t|
     t.integer  "user_id"
     t.string   "award_giver_name"
     t.string   "award_link"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "company_id"
+    t.string   "award_id"
+    t.string   "award_name"
+    t.binary   "award_logo"
+    t.string   "award_giver_id"
+  end
+
+  create_table "givers", force: true do |t|
+    t.string   "giver_id"
+    t.string   "giver_name"
+    t.string   "giver_website"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "user_awards", force: true do |t|
+    t.string   "uid"
+    t.string   "award_id"
     t.integer  "accepted"
     t.datetime "created_at"
     t.datetime "updated_at"

@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  uid: MyString
+  award_id: MyString
+  accepted: 1
+
+two:
+  uid: MyString
+  award_id: MyString
+  accepted: 1

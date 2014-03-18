@@ -12,20 +12,29 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :user_id %><br>
-    <%= f.number_field :user_id %>
+    <%= f.label :award_giver_name %><br>
+    <%= f.number_field :award_giver_name %>
   </div>
   <div class="field">
-    <%= f.label :award_giver_name %><br>
-    <%= f.text_field :award_giver_name %>
+    <%= f.label :award_giver_id %><br>
+    <%= f.number_field :award_giver_id %>
   </div>
+  <div class="field">
+    <%= f.label :award_id %><br>
+    <%= f.text_field :award_id %>
+  </div>
+  <div class="field">
+    <%= f.label :award_name %><br>
+    <%= f.text_field :award_name %>
+  </div>
+  
   <div class="field">
     <%= f.label :award_link %><br>
     <%= f.text_field :award_link %>
   </div>
   <div class="field">
-    <%= f.label :accepted %><br>
-    <%= f.number_field :accepted %>
+    <%= f.label :company_id %><br>
+    <%= f.text_field :company_id %>
   </div>
   <div class="actions">
     <%= f.submit %>
